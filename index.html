@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Laxman Poudel | Full-Stack Developer & Cybersecurity Learner</title>
+  <meta name="description" content="Portfolio of Laxman Poudel — a Grade 12 Science student, full-stack developer, and cybersecurity enthusiast from Nepal. Builder of web apps, automation tools, and security projects.">
+  <meta name="keywords" content="Laxman Poudel, developer Nepal, cybersecurity, web developer, portfolio, NP RADAR, school management system, React, PHP, full-stack">
+  <meta name="author" content="Laxman Poudel">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://laxman-poudel.com.np/">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Laxman Poudel | Full-Stack Developer & Cybersecurity Learner">
+  <meta property="og:description" content="Building innovative web applications, cybersecurity projects, and digital solutions from Nepal.">
+  <meta property="og:url" content="https://laxman-poudel.com.np/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://laxman-poudel.com.np/favicon/android-chrome-512x512.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Laxman Poudel | Full-Stack Developer & Cybersecurity Learner">
+  <meta name="twitter:description" content="Building innovative web applications, cybersecurity projects, and digital solutions from Nepal.">
+  <meta name="twitter:image" content="https://laxman-poudel.com.np/favicon/android-chrome-512x512.png">
+
+  <!-- Favicon & PWA -->
+  <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <meta name="theme-color" content="#050a0f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" media="print" onload="this.media='all'">
+  <style>
+    /* =============================================
+       LAXMAN POUDEL — PORTFOLIO (Mobile-First, Fast)
+       ============================================= */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #050a0f; --bg2: #0a1220; --bg3: #0f1e30;
+      --accent: #00d4a1; --accent2: #0084ff;
+      --accent-dim: rgba(0, 212, 161, 0.10); --accent-dim2: rgba(0, 212, 161, 0.18);
+      --text: #e8f0f8; --text-muted: #7a9bb5;
+      --border: rgba(0, 212, 161, 0.22); --border-sub: rgba(255, 255, 255, 0.06);
+      --mono: 'JetBrains Mono', 'Courier New', monospace; --sans: 'Syne', sans-serif;
+      --nav-h: 60px; --max-w: 1160px; --ease: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); }
+    body {
+      background: var(--bg); color: var(--text); font-family: var(--sans);
+      font-size: 16px; line-height: 1.6; overflow-x: hidden; -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeSpeed;
+    }
+
+    a, button, input, textarea, .proj-card, .service-card, .skill-pill, .c-link, .btn-primary, .btn-outline {
+      transition: background 0.2s var(--ease), color 0.2s var(--ease), border-color 0.2s var(--ease), transform 0.2s var(--ease);
+    }
+
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+    .noise { position: fixed; inset: 0; pointer-events: none; opacity: 0.02; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); z-index: 0; }
+    .grid-bg { position: fixed; inset: 0; pointer-events: none; background-image: linear-gradient(rgba(0,212,161,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,212,161,0.03) 1px, transparent 1px); background-size: 48px 48px; z-index: 0; }
+    .glow-orb { position: fixed; border-radius: 50%; filter: blur(120px); pointer-events: none; z-index: 0; }
+    .orb1 { width: 400px; height: 400px; background: radial-gradient(circle, rgba(0,212,161,0.06), transparent 70%); top: -50px; right: -100px; }
+    .orb2 { width: 350px; height: 350px; background: radial-gradient(circle, rgba(0,132,255,0.04), transparent 70%); bottom: -30px; left: -80px; }
+
+    nav { position: fixed; top: 0; width: 100%; z-index: 200; height: var(--nav-h); border-bottom: 1px solid var(--border-sub); background: rgba(5, 10, 15, 0.9); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+    .nav-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 5%; height: 100%; display: flex; align-items: center; gap: 1.5rem; }
+    .logo { font-family: var(--mono); font-size: 13px; color: var(--accent); letter-spacing: 0.08em; text-decoration: none; margin-right: auto; white-space: nowrap; }
+    .logo span { color: var(--text-muted); }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a { font-family: var(--mono); font-size: 11px; color: var(--text-muted); text-decoration: none; letter-spacing: 0.06em; position: relative; padding-bottom: 2px; }
+    .nav-links a::after { content: ''; position: absolute; left: 0; bottom: -2px; width: 0; height: 1px; background: var(--accent); transition: width 0.2s var(--ease); }
+    .nav-links a:hover { color: var(--accent); }
+    .nav-links a:hover::after { width: 100%; }
+    .nav-cta { font-family: var(--mono); font-size: 11px; color: var(--accent); text-decoration: none; letter-spacing: 0.06em; padding: 6px 14px; border: 1px solid var(--border); background: var(--accent-dim); white-space: nowrap; }
+    .nav-cta:hover { background: var(--accent-dim2); border-color: var(--accent); }
+
+    .hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 28px; height: 28px; background: none; border: none; cursor: pointer; padding: 3px; margin-left: auto; }
+    .hamburger span { display: block; width: 100%; height: 1.5px; background: var(--text-muted); transition: transform 0.2s var(--ease), opacity 0.2s; }
+    .hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+    .hero { position: relative; z-index: 1; min-height: 100vh; display: flex; align-items: center; padding: calc(var(--nav-h) + 1.5rem) 5% 2rem; }
+    .hero-inner { max-width: var(--max-w); margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+    .hero-text, .terminal-card { opacity: 0; transform: translateY(20px); transition: opacity 0.5s var(--ease), transform 0.5s var(--ease); }
+    .hero-text.visible { opacity: 1; transform: none; }
+    .terminal-card.visible { opacity: 1; transform: none; transition-delay: 0.1s; }
+
+    .tag { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 10px; color: var(--accent); letter-spacing: 0.1em; margin-bottom: 1rem; padding: 4px 12px; border: 1px solid var(--border); background: var(--accent-dim); }
+    .pulse-dot { width: 6px; height: 6px; background: var(--accent); border-radius: 50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+    h1 { font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 800; line-height: 1.08; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+    .accent-text { color: var(--accent); }
+    .hero-role { font-family: var(--mono); font-size: 12px; color: var(--accent); letter-spacing: 0.04em; margin-bottom: 0.8rem; }
+    .hero-desc { color: var(--text-muted); line-height: 1.6; font-size: 14px; max-width: 450px; margin-bottom: 1.8rem; }
+    .hero-btns { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-bottom: 1.8rem; }
+
+    .btn-primary, .btn-outline { display: inline-block; font-family: var(--mono); font-size: 11px; letter-spacing: 0.05em; padding: 10px 22px; text-decoration: none; cursor: pointer; border: none; }
+    .btn-primary { background: var(--accent); color: var(--bg); font-weight: 700; }
+    .btn-primary:hover { background: #00ffbf; transform: translateY(-1px); }
+    .btn-outline { background: transparent; color: var(--accent); border: 1px solid var(--border); }
+    .btn-outline:hover { background: var(--accent-dim); transform: translateY(-1px); }
+
+    .hero-stats { display: flex; gap: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-sub); }
+    .stat-num { font-family: var(--mono); font-size: 1.5rem; font-weight: 700; color: var(--accent); line-height: 1; }
+    .stat-label { font-size: 10px; color: var(--text-muted); letter-spacing: 0.05em; margin-top: 3px; }
+
+    .terminal-card { background: var(--bg2); border: 1px solid var(--border); box-shadow: 0 0 40px rgba(0,212,161,0.04); }
+    .term-bar { padding: 10px 14px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 6px; background: rgba(0,0,0,0.15); }
+    .dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+    .dot-r { background: #ff5f56; } .dot-y { background: #ffbd2e; } .dot-g { background: #27c93f; }
+    .term-title { font-family: var(--mono); font-size: 10px; color: var(--text-muted); margin-left: 6px; }
+    .term-body { padding: 16px; font-family: var(--mono); font-size: 11px; line-height: 1.8; color: var(--text-muted); }
+    .prompt { color: var(--accent); } .cmd { color: var(--text); } .out-key { color: var(--accent2); } .out-str { color: var(--accent); } .out-val { color: var(--text); } .out-cm { color: rgba(255,255,255,0.2); } .out-ok { color: #27c93f; }
+    .caret { display: inline-block; width: 7px; height: 12px; background: var(--accent); vertical-align: -2px; animation: blink 0.85s step-start infinite; }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+    .tech-strip { position: relative; z-index: 1; background: var(--bg2); border-top: 1px solid var(--border-sub); border-bottom: 1px solid var(--border-sub); }
+    .tech-strip-inner { max-width: var(--max-w); margin: 0 auto; padding: 0.9rem 5%; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+    .strip-label { font-family: var(--mono); font-size: 9px; color: var(--text-muted); letter-spacing: 0.12em; white-space: nowrap; }
+    .marquee-wrapper { flex: 1; overflow: hidden; mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent); -webkit-mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent); }
+    .marquee-track { display: flex; gap: 1.8rem; width: max-content; animation: marquee 20s linear infinite; }
+    .marquee-track span { font-family: var(--mono); font-size: 11px; color: rgba(255,255,255,0.2); letter-spacing: 0.05em; white-space: nowrap; }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
+
+    .section { position: relative; z-index: 1; }
+    .section-alt { background: var(--bg2); border-top: 1px solid var(--border-sub); border-bottom: 1px solid var(--border-sub); }
+    .section-wrap { max-width: var(--max-w); margin: 0 auto; padding: 4rem 5%; }
+    .sec-header { margin-bottom: 2.5rem; }
+    .sec-num { display: block; font-family: var(--mono); font-size: 10px; color: var(--accent); letter-spacing: 0.12em; margin-bottom: 0.3rem; }
+    .sec-title { font-size: clamp(1.6rem, 2.5vw, 2.1rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+    .sec-line { width: 40px; height: 2px; background: var(--accent); margin-top: 0.6rem; }
+
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+    .about-text { color: var(--text-muted); line-height: 1.7; font-size: 14px; }
+    .about-text p { margin-bottom: 0.8rem; }
+    .about-text strong { color: var(--text); }
+    .about-image { width: 100%; aspect-ratio: 1/1; max-height: 380px; overflow: hidden; border: 2px solid var(--accent); box-shadow: 0 0 0 5px rgba(0,212,161,0.15); display: flex; align-items: center; justify-content: center; background: var(--bg3); }
+    .about-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .skill-icons { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.5rem; }
+    .skill-pill { display: inline-flex; align-items: center; gap: 0.4rem; background: rgba(0,212,161,0.08); border: 1px solid rgba(0,212,161,0.16); color: var(--text); font-family: var(--mono); font-size: 10px; letter-spacing: 0.03em; padding: 0.6rem 0.8rem; border-radius: 999px; white-space: nowrap; }
+    .quote { margin-top: 1.2rem; padding: 0.8rem 1rem; border-left: 2px solid var(--accent); background: var(--accent-dim); }
+    .quote p { font-family: var(--mono); font-size: 11px; color: var(--accent); margin-bottom: 0.2rem !important; }
+    .quote cite { font-family: var(--mono); font-size: 9px; color: var(--text-muted); font-style: normal; }
+
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .service-card { background: var(--bg3); border: 1px solid var(--border-sub); padding: 1.5rem; position: relative; overflow: hidden; }
+    .service-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--accent), transparent); opacity: 0; transition: opacity 0.3s; }
+    .service-card:hover { border-color: var(--border); transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.3); }
+    .service-card:hover::before { opacity: 1; }
+    .svc-icon { font-size: 1.4rem; margin-bottom: 0.8rem; display: block; color: var(--accent); }
+    .svc-name { font-size: 15px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 0.4rem; }
+    .svc-desc { color: var(--text-muted); font-size: 12px; line-height: 1.6; }
+
+    .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
+    .proj-card { background: var(--bg2); border: 1px solid var(--border-sub); overflow: hidden; }
+    .proj-card:hover { border-color: var(--border); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.3); }
+    .proj-img { position: relative; overflow: hidden; border-bottom: 1px solid var(--border-sub); background: var(--bg3); aspect-ratio: 16/10; display: flex; align-items: center; justify-content: center; }
+    .proj-img img { width: 100%; height: 100%; object-fit: contain; object-position: center; background: var(--bg3); }
+    .proj-badge { position: absolute; top: 8px; right: 8px; font-family: var(--mono); font-size: 9px; letter-spacing: 0.05em; padding: 3px 8px; z-index: 2; }
+    .badge-web { background: rgba(0,132,255,0.15); border: 1px solid rgba(0,132,255,0.3); color: #58a6ff; }
+    .badge-dash { background: rgba(255,180,0,0.15); border: 1px solid rgba(255,180,0,0.3); color: #fbbf24; }
+    .proj-body { padding: 1.2rem; }
+    .proj-title { font-size: 14px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 0.4rem; }
+    .proj-desc { color: var(--text-muted); font-size: 11px; line-height: 1.6; margin-bottom: 0.8rem; }
+    .proj-tech { display: flex; flex-wrap: wrap; gap: 5px; }
+    .proj-tech span { font-family: var(--mono); font-size: 9px; color: var(--text-muted); padding: 2px 7px; border: 1px solid var(--border-sub); letter-spacing: 0.03em; }
+
+    .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+    .contact-left { color: var(--text-muted); line-height: 1.7; font-size: 14px; }
+    .contact-links { display: flex; flex-direction: column; gap: 8px; margin-top: 1.5rem; }
+    .c-link { display: flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 11px; color: var(--text-muted); text-decoration: none; padding: 8px 12px; border: 1px solid var(--border-sub); word-break: break-all; }
+    .c-link:hover { border-color: var(--border); color: var(--accent); background: var(--accent-dim); }
+    .c-link-icon { font-size: 14px; flex-shrink: 0; }
+
+    .contact-form { display: flex; flex-direction: column; gap: 0.8rem; }
+    .contact-form input, .contact-form textarea { width: 100%; background: var(--bg3); border: 1px solid rgba(255,255,255,0.10); padding: 10px 14px; color: var(--text); font-family: var(--mono); font-size: 11px; outline: none; resize: vertical; }
+    .contact-form input:focus, .contact-form textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(0,212,161,0.06); }
+    .form-submit { width: 100%; background: var(--accent); color: var(--bg); font-family: var(--mono); font-size: 11px; font-weight: 700; padding: 11px; border: none; cursor: pointer; letter-spacing: 0.06em; margin-top: 0.2rem; }
+    .form-submit:hover { background: #00ffbf; transform: translateY(-1px); }
+
+    /* Footer - single row on desktop, stacked on mobile */
+    footer { position: relative; z-index: 1; border-top: 1px solid var(--border-sub); padding: 1.8rem 5%; background: var(--bg); }
+    .footer-inner { max-width: var(--max-w); margin: 0 auto; display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: nowrap; }
+    .footer-left { flex: 0 0 auto; text-align: left; }
+    .footer-center { flex: 1 1 auto; text-align: center; }
+    .footer-right { flex: 0 0 auto; text-align: right; }
+    .footer-logo { font-family: var(--mono); font-size: 13px; color: var(--accent); text-decoration: none; letter-spacing: 0.08em; }
+    .footer-text { font-family: var(--mono); font-size: 10px; color: var(--text-muted); letter-spacing: 0.04em; white-space: nowrap; }
+
+    .fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.4s var(--ease), transform 0.4s var(--ease); }
+    .fade-up.visible { opacity: 1; transform: none; }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 960px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .about-grid { grid-template-columns: 1fr; }
+      .contact-inner { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 768px) {
+      .projects-grid { grid-template-columns: 1fr; }
+      .proj-img { aspect-ratio: 16/9; }
+      .services-grid { grid-template-columns: 1fr; }
+      /* Footer stacks on mobile */
+      .footer-inner { flex-direction: column; align-items: center; justify-content: center; gap: 0.6rem; text-align: center; }
+      .footer-left, .footer-center, .footer-right { flex: unset; text-align: center; width: 100%; }
+    }
+
+    @media (max-width: 720px) {
+      .nav-links { display: none; position: fixed; top: var(--nav-h); left: 0; right: 0; background: rgba(5,10,15,0.97); border-bottom: 1px solid var(--border); flex-direction: column; padding: 1.2rem 5%; gap: 1rem; backdrop-filter: blur(12px); }
+      .nav-links.open { display: flex; }
+      .hamburger { display: flex; }
+      .nav-cta { display: none; }
+      .hero-stats { justify-content: center; text-align: center; gap: 2rem; }
+      .hero-btns { justify-content: center; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-btns { flex-direction: column; align-items: center; }
+      .btn-primary, .btn-outline { text-align: center; width: 100%; max-width: 280px; }
+      .section-wrap { padding: 3rem 5%; }
+      .about-image { max-height: 300px; }
+      .hero-stats { gap: 1.5rem; flex-wrap: wrap; justify-content: center; }
+      .hero-text { text-align: center; }
+      .hero-desc { margin-left: auto; margin-right: auto; }
+    }
+
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--bg2); }
+    ::-webkit-scrollbar-thumb { background: rgba(0,212,161,0.25); border-radius: 2px; }
+    ::selection { background: rgba(0,212,161,0.2); color: var(--text); }
+  </style>
+</head>
+<body>
+  <div class="noise"></div><div class="grid-bg"></div><div class="glow-orb orb1"></div><div class="glow-orb orb2"></div>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">LAXMAN<span>.dev</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Let's Talk</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text fade-up">
+        <div class="tag"><span class="pulse-dot"></span> Open to opportunities</div>
+        <h1>Laxman<br><span class="accent-text">Poudel</span></h1>
+        <p class="hero-role">Grade 12 Science • Full-Stack Developer • Cybersecurity Learner</p>
+        <p class="hero-desc">Building innovative web apps, automation tools & security projects from Nepal. Founder of <strong>NP RADAR</strong>.</p>
+        <div class="hero-btns"><a href="#projects" class="btn-primary">View Work</a><a href="#contact" class="btn-outline">Get In Touch</a></div>
+        <div class="hero-stats">
+          <div class="stat"><div class="stat-num">4+</div><div class="stat-label">Projects</div></div>
+          <div class="stat"><div class="stat-num">2</div><div class="stat-label">Years Coding</div></div>
+          <div class="stat"><div class="stat-num">25+</div><div class="stat-label">Security Tools</div></div>
+        </div>
+      </div>
+      <div class="terminal-card fade-up">
+        <div class="term-bar"><span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span><span class="term-title">laxman@portfolio ~ </span></div>
+        <div class="term-body">
+          <span class="prompt">➜</span> <span class="cmd">whoami</span><br>
+          <span class="out-str">Laxman Poudel — developer, builder, learner.</span><br><br>
+          <span class="prompt">➜</span> <span class="cmd">cat skills.json</span><br>
+          <span class="out-cm">{</span><br>
+          &nbsp;&nbsp;<span class="out-key">"frontend"</span><span class="out-cm">:</span> <span class="out-str">"React, Tailwind, JS"</span><span class="out-cm">,</span><br>
+          &nbsp;&nbsp;<span class="out-key">"backend"</span><span class="out-cm">:</span> <span class="out-str">"Node.js, PHP, Firebase"</span><span class="out-cm">,</span><br>
+          &nbsp;&nbsp;<span class="out-key">"security"</span><span class="out-cm">:</span> <span class="out-str">"Ethical Hacking, Bug Hunting"</span><br>
+          <span class="out-cm">}</span><br><br>
+          <span class="prompt">➜</span> <span class="cmd">echo $mission</span><br>
+          <span class="out-ok">"Empower through code & security."</span><br>
+          <span class="prompt">➜</span> <span class="caret"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="tech-strip">
+    <div class="tech-strip-inner">
+      <span class="strip-label">STACK</span>
+      <div class="marquee-wrapper"><div class="marquee-track"><span>JavaScript</span><span>·</span><span>PHP</span><span>·</span><span>React</span><span>·</span><span>Node.js</span><span>·</span><span>MySQL</span><span>·</span><span>Firebase</span><span>·</span><span>HTML5</span><span>·</span><span>CSS3</span><span>·</span><span>Git</span><span>·</span><span>Cybersecurity</span><span>·</span><span>Automation</span><span>·</span><span>JavaScript</span><span>·</span><span>PHP</span><span>·</span><span>React</span><span>·</span><span>Node.js</span><span>·</span><span>MySQL</span><span>·</span><span>Firebase</span><span>·</span><span>HTML5</span><span>·</span><span>CSS3</span><span>·</span><span>Git</span><span>·</span><span>Cybersecurity</span><span>·</span><span>Automation</span></div></div>
+    </div>
+  </div>
+
+  <section id="about" class="section"><div class="section-wrap">
+    <div class="sec-header fade-up"><span class="sec-num">01. ABOUT</span><h2 class="sec-title">The person behind<br>the terminal</h2><div class="sec-line"></div></div>
+    <div class="about-grid">
+      <div class="about-image fade-up"><img src="images/me.jpg" alt="Portrait of Laxman Poudel" loading="lazy" decoding="async" width="400" height="400"></div>
+      <div class="about-content fade-up">
+        <div class="about-text"><p>I'm <strong>Laxman Poudel</strong>, a Grade 12 Science student from Nepal with a deep passion for <strong>full-stack development, cybersecurity, and automation</strong>. I founded <strong>NP RADAR</strong> to build useful digital solutions.</p><p>My journey includes creating school management systems, real-time messaging apps, quiz platforms, and a free cybersecurity toolkit with 25+ tools. I believe in learning by building.</p></div>
+        <div class="skill-icons"><span class="skill-pill"><i class="fab fa-js"></i> JavaScript</span><span class="skill-pill"><i class="fab fa-php"></i> PHP</span><span class="skill-pill"><i class="fab fa-react"></i> React</span><span class="skill-pill"><i class="fab fa-node-js"></i> Node.js</span><span class="skill-pill"><i class="fas fa-database"></i> MySQL</span><span class="skill-pill"><i class="fas fa-shield-alt"></i> Security</span><span class="skill-pill"><i class="fab fa-git-alt"></i> Git</span><span class="skill-pill"><i class="fas fa-fire"></i> Firebase</span></div>
+        <div class="quote"><p>"Building innovative web applications, cybersecurity projects, and digital solutions from Nepal."</p><cite>— Laxman Poudel, Founder of NP RADAR</cite></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="services" class="section section-alt"><div class="section-wrap">
+    <div class="sec-header fade-up"><span class="sec-num">02. SERVICES</span><h2 class="sec-title">What I bring<br>to the table</h2><div class="sec-line"></div></div>
+    <div class="services-grid">
+      <div class="service-card fade-up"><span class="svc-icon"><i class="fas fa-globe"></i></span><h3 class="svc-name">Web Development</h3><p class="svc-desc">Custom websites & web apps with modern stacks and responsive design.</p></div>
+      <div class="service-card fade-up"><span class="svc-icon"><i class="fas fa-shield-virus"></i></span><h3 class="svc-name">Cybersecurity Tools</h3><p class="svc-desc">Free, open-source security toolkit for beginners — 25+ tools included.</p></div>
+      <div class="service-card fade-up"><span class="svc-icon"><i class="fas fa-school"></i></span><h3 class="svc-name">School Platforms</h3><p class="svc-desc">Complete management systems with student, teacher & admin dashboards.</p></div>
+      <div class="service-card fade-up"><span class="svc-icon"><i class="fas fa-robot"></i></span><h3 class="svc-name">Automation</h3><p class="svc-desc">AI-powered web automation, data extraction & workflow solutions.</p></div>
+      <div class="service-card fade-up"><span class="svc-icon"><i class="fas fa-mobile-alt"></i></span><h3 class="svc-name">App Development</h3><p class="svc-desc">Real-time chat apps, quiz platforms & mobile-friendly PWAs.</p></div>
+      <div class="service-card fade-up"><span class="svc-icon"><i class="fas fa-code-branch"></i></span><h3 class="svc-name">Firebase Integration</h3><p class="svc-desc">Authentication, real-time database & cloud functions setup.</p></div>
+    </div>
+  </div></section>
+
+  <section id="projects" class="section"><div class="section-wrap">
+    <div class="sec-header fade-up"><span class="sec-num">03. PROJECTS</span><h2 class="sec-title">Featured work &<br>case studies</h2><div class="sec-line"></div></div>
+    <div class="projects-grid">
+      <article class="proj-card fade-up">
+        <div class="proj-img"><img src="images/project_01.png" alt="Quiz Website Project" loading="lazy" decoding="async" width="600" height="375"><span class="proj-badge badge-web">Web Dev</span></div>
+        <div class="proj-body"><h3 class="proj-title">Quiz Website</h3><p class="proj-desc">A dynamic quiz website developed for a school, featuring interactive questions and instant feedback.</p><div class="proj-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+      </article>
+      <article class="proj-card fade-up">
+        <div class="proj-img"><img src="images/project_02.png" alt="SMS Adda Project" loading="lazy" decoding="async" width="600" height="375"><span class="proj-badge badge-web">Web App</span></div>
+        <div class="proj-body"><h3 class="proj-title">SMS Adda</h3><p class="proj-desc">A messaging platform enabling random and individual chats, built with real-time communication features.</p><div class="proj-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Firebase</span><span>ImgBB</span></div></div>
+      </article>
+      <article class="proj-card fade-up">
+        <div class="proj-img"><img src="images/project_03.png" alt="Sungabha Awasiya Ma Vi Website Project" loading="lazy" decoding="async" width="600" height="375"><span class="proj-badge badge-web">Web Dev</span></div>
+        <div class="proj-body"><h3 class="proj-title">Sungabha Awasiya Ma Vi Website</h3><p class="proj-desc">Official website for Sungabha Awasiya Ma Vi school, providing information and resources for students and parents.</p><div class="proj-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+      </article>
+      <article class="proj-card fade-up">
+        <div class="proj-img"><img src="images/project_04.png" alt="NP RADAR Portfolio Website" loading="lazy" decoding="async" width="600" height="375"><span class="proj-badge badge-web">NP RADAR</span></div>
+        <div class="proj-body"><h3 class="proj-title">NP RADAR — Portfolio</h3><p class="proj-desc">A modern portfolio showcasing my skills, projects, and cybersecurity tools. Built with performance and security in mind.</p><div class="proj-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+      </article>
+    </div>
+  </div></section>
+
+  <section id="contact" class="section section-alt"><div class="section-wrap">
+    <div class="sec-header fade-up"><span class="sec-num">04. CONTACT</span><h2 class="sec-title">Let's build something<br>together</h2><div class="sec-line"></div></div>
+    <div class="contact-inner">
+      <div class="contact-left fade-up">
+        <p>Based in <strong>Nepal</strong>. Open to freelance projects, collaborations, and learning opportunities.</p>
+        <div class="contact-links">
+          <a href="mailto:hello@laxman-poudel.com.np" class="c-link"><span class="c-link-icon"><i class="fas fa-envelope"></i></span> hello@laxman-poudel.com.np</a>
+          <a href="#" class="c-link"><span class="c-link-icon"><i class="fas fa-map-marker-alt"></i></span> Morang, Nepal</a>
+        </div>
+      </div>
+      <div class="fade-up">
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xkoelbar" method="POST" novalidate aria-label="Contact form">
+          <div class="form-group"><label for="name" class="sr-only">Your Name</label><input type="text" id="name" name="name" placeholder="name" required autocomplete="name"></div>
+          <div class="form-group"><label for="email" class="sr-only">Your Email</label><input type="email" id="email" name="email" placeholder="email" required autocomplete="email"></div>
+          <div class="form-group"><label for="subject" class="sr-only">Subject</label><input type="text" id="subject" name="subject" placeholder="subject" required></div>
+          <div class="form-group"><label for="message" class="sr-only">Your Message</label><textarea id="message" name="message" rows="5" placeholder="message" required></textarea></div>
+          <button type="submit" class="form-submit">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+  </div></section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left"><a href="#" class="footer-logo">LP.dev</a></div>
+      <div class="footer-center"><p class="footer-text">© <span id="year"></span> Laxman Poudel — Morang, Nepal</p></div>
+      <div class="footer-right"><p class="footer-text">built with ❤ & ☕</p></div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => { hamburger.classList.toggle('open'); navLinks.classList.toggle('open'); });
+    navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { hamburger.classList.remove('open'); navLinks.classList.remove('open'); }); });
+
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); }); }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-up, .hero-text, .terminal-card').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
