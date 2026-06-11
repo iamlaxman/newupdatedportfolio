@@ -44,33 +44,4 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Project Pages (external links) -->
-  <url>
-    <loc>https://iamlaxman.github.io/sungabhaseequizfinal</loc>
-    <lastmod>2025-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://iamlaxman.github.io/smsadda</loc>
-    <lastmod>2025-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://iamlaxman.github.io/sungabha-school</loc>
-    <lastmod>2025-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
-    <loc>https://iamlaxman.github.io/np-radar</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
 </urlset>
